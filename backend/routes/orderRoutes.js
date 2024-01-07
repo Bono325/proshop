@@ -11,7 +11,7 @@ import { protect, admin } from '../middleware/authMiddlerware.js'
 
 router.route('/').post(protect, addOrderItems).get(protect, admin, getOrders);
 router.route('/mine').get(protect, getMyOrders);
-router.route('/:id').get(protect, admin, getOrderrbyId);
+router.route('/:id').get(protect, getOrderrbyId);
 router.route('/:id/pay').put(protect, updateOrderToPaid);
 router.route('/:id/deliver').put(protect, admin, updateOrderToDelivered)
 
