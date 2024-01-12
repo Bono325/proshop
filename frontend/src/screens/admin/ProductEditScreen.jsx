@@ -56,6 +56,7 @@ const ProductEditScreen = () => {
       toast.error(result.error);
     } else {
       toast.success('Product updated');
+      refetch();
       navigate('/admin/productlist');
     }
 
@@ -113,6 +114,8 @@ const ProductEditScreen = () => {
                 Label='Choose file'
                 onChange={ uploadFileHandler }></Form.Control>
             </Form.Group>
+
+            {loadingUpload && <Loader />}
 
             <Form.Group controlId='brand'  className='my-2'>
             <Form.Label>Brand</Form.Label>

@@ -1,6 +1,7 @@
 import {LinkContainer } from 'react-router-bootstrap';
 import { Table, Button } from 'react-bootstrap';
 import { FaTimes } from 'react-icons/fa';
+// import Paginate from '../../componets/Paginate';
 import Message from '../../componets/Message';
 import Loader from '../../componets/Loader';
 import { useGetOrdersQuery } from '../../slices/ordersApiSlice';
