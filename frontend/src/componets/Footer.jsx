@@ -10,7 +10,7 @@ const Footer = () => {
                     <p>Proshop &copy; {currentYear}</p>
                 </Col>
             </Row>
-        </Container>
+        </Container> 
     </footer>
   )
 }
